@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0021C41A1B2E973500FC46FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021C4191B2E973500FC46FA /* AppDelegate.swift */; };
-		0021C41C1B2E973500FC46FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021C41B1B2E973500FC46FA /* ViewController.swift */; };
 		0021C41F1B2E973500FC46FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0021C41D1B2E973500FC46FA /* Main.storyboard */; };
 		0021C4211B2E973500FC46FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0021C4201B2E973500FC46FA /* Images.xcassets */; };
 		0021C4241B2E973500FC46FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0021C4221B2E973500FC46FA /* LaunchScreen.xib */; };
 		0021C4301B2E973500FC46FA /* RosterClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021C42F1B2E973500FC46FA /* RosterClassTests.swift */; };
+		0021C43A1B2E99A200FC46FA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0021C4391B2E99A200FC46FA /* ListViewController.swift */; };
+		003656DA1B2F4B8400ADDE20 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003656D91B2F4B8400ADDE20 /* Person.swift */; };
+		0036570C1B2F630C00ADDE20 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036570B1B2F630C00ADDE20 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		0021C4141B2E973300FC46FA /* RosterClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosterClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0021C4181B2E973500FC46FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0021C4191B2E973500FC46FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0021C41B1B2E973500FC46FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0021C41E1B2E973500FC46FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0021C4201B2E973500FC46FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0021C4231B2E973500FC46FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0021C4291B2E973500FC46FA /* RosterClassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RosterClassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0021C42E1B2E973500FC46FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0021C42F1B2E973500FC46FA /* RosterClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterClassTests.swift; sourceTree = "<group>"; };
+		0021C4391B2E99A200FC46FA /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		003656D91B2F4B8400ADDE20 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0036570B1B2F630C00ADDE20 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				0021C4191B2E973500FC46FA /* AppDelegate.swift */,
-				0021C41B1B2E973500FC46FA /* ViewController.swift */,
 				0021C41D1B2E973500FC46FA /* Main.storyboard */,
+				0021C4391B2E99A200FC46FA /* ListViewController.swift */,
+				0036570B1B2F630C00ADDE20 /* DetailViewController.swift */,
+				003656D91B2F4B8400ADDE20 /* Person.swift */,
 				0021C4201B2E973500FC46FA /* Images.xcassets */,
 				0021C4221B2E973500FC46FA /* LaunchScreen.xib */,
 				0021C4171B2E973500FC46FA /* Supporting Files */,
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0021C41C1B2E973500FC46FA /* ViewController.swift in Sources */,
+				003656DA1B2F4B8400ADDE20 /* Person.swift in Sources */,
 				0021C41A1B2E973500FC46FA /* AppDelegate.swift in Sources */,
+				0021C43A1B2E99A200FC46FA /* ListViewController.swift in Sources */,
+				0036570C1B2F630C00ADDE20 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RosterClass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RosterClass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +419,7 @@
 				0021C4351B2E973500FC46FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0021C4361B2E973500FC46FA /* Build configuration list for PBXNativeTarget "RosterClassTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +428,7 @@
 				0021C4381B2E973500FC46FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
